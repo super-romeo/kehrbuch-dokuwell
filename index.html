@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de-AT">
+<html lang="de-AT" data-type="software" data-radius="soft" data-buttons="solid">
 <head>
 <meta charset="utf-8">
 <!-- Google Tag Manager -->
@@ -17,7 +17,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300..600&family=Hanken+Grotesk:wght@400..600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400..700&family=Funnel+Sans:wght@400..600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="taste/system.css">
+<link rel="stylesheet" href="taste/ui/base.css">
+<link rel="stylesheet" href="taste/ui/window/fragment.css">
+<link rel="stylesheet" href="taste/ui/checklist/fragment.css">
+<link rel="stylesheet" href="taste/backgrounds.css">
+<link rel="stylesheet" href="taste/layout.css">
 <link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
@@ -76,23 +82,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MS74G3LD"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<!-- tasteskill 2.5 · kind: software · hero: statement · page: dark soot ground, ember accent, one light band (So funktioniert es) · pairing: Newsreader / Hanken Grotesk · buttons: solid · moment: the protocol card signs itself (card loop, 3.6 s) -->
+<!-- type: software · deal: hero statement (bg-horizon), palette card-pastels, type funnel, radius soft, nav nav-mega (nav--tone), close close-type, footer footer-statement, rhythm dark-band (#beispiel), buttons solid, mark stack · UI: assets/ui window (#was), checklist (#beispiel), still · built on taste/ (tasteskill 2.5 kit files, unchanged) -->
 
-<header class="nav"><div class="wrap nav__bar">
-  <div class="logo"><a class="nav__logo" href="index.html" data-ev="click_logo_home"><svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="1.5"/><rect x="14" y="3" width="4" height="7" rx="1"/></svg>Kehrbuch Digital</a></div>
-  <nav class="top nav__links" aria-label="Hauptnavigation"><a href="#was" data-ev="click_nav_was">Was Sie bekommen</a><a href="price.html" data-ev="click_nav_preis">Preis</a><a href="#beispiel" data-ev="click_nav_beispiel">Beispiel</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
-</div></header>
+<header class="nav nav--tone">
+  <div class="wrap nav__bar">
+    <a class="nav__logo" href="index.html" data-ev="click_logo_home"><span class="mark" data-mark="stack" aria-hidden="true"></span>Kehrbuch Digital</a>
+    <nav class="nav__links" aria-label="Hauptnavigation">
+      <div class="nav__item"><a class="nav__link" href="#was" data-ev="click_nav_was">Was Sie bekommen</a></div>
+      <div class="nav__item"><a class="nav__link" href="price.html" data-ev="click_nav_preis">Preis</a></div>
+      <div class="nav__item"><a class="nav__link" href="#beispiel" data-ev="click_nav_beispiel">Beispiel</a></div>
+      <div class="nav__item"><a class="nav__link" href="#start" data-ev="click_nav_start">Start</a></div>
+    </nav>
+  </div>
+</header>
 
 <main>
-  <section class="hero hero--statement" data-enter aria-labelledby="hero-h">
+  <section class="hero hero--statement bg-horizon" data-enter aria-labelledby="hero-h">
     <div class="wrap"><div class="hero-text hero__in">
-      <div class="hero__main">
-        <h1 id="hero-h">Kehrtermine planen und Protokolle vor Ort erfassen: das Kehrbuch digital statt auf Papier</h1>
-        <p class="hero__lead">Für Rauchfangkehrerbetriebe mit einem bis wenigen Gesellen: jedes Objekt mit seinen Feuerstätten und Kehrfristen, die Termine je Tour geplant, die Kundschaft vorab verständigt, und das Protokoll mit Befund vor Ort auf dem Handy erfasst.</p>
+      <div class="hero__text">
+        <h1 id="hero-h">Kehrtermine planen, Protokolle vor Ort erfassen</h1>
+        <p class="hero__lead">Das Kehrbuch digital für Betriebe mit einem bis wenigen Gesellen: Termine je Tour aus den Kehrfristen, die Kundschaft vorab verständigt, der Befund am Handy.</p>
         <div class="btn-row">
-          <a class="btn btn--primary" href="price.html" data-ev="cta_click">Das brauche ich</a>
-          <p class="cta-note">Dienst in Vorbereitung · Auf dieser Seite wird keine Zahlung angenommen</p>
+          <a class="btn btn--primary" href="price.html" data-ev="cta_click">Das brauche ich<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
         </div>
+        <p class="t-small muted">Dienst in Vorbereitung · Auf dieser Seite wird keine Zahlung angenommen</p>
       </div>
       <dl class="hero__facts">
         <div><dt>Für wen</dt><dd>Rauchfangkehrerbetriebe in Österreich</dd></div>
@@ -108,29 +121,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="section-head">
         <h2 id="was-h">Was Sie bekommen. <span class="muted">Vom Objekt mit seinen Feuerstätten bis zum fertigen Protokoll.</span></h2>
       </div>
-      <div class="was-grid">
-        <ul class="feat">
-          <li class="feat__item"><b>Objekte und Feuerstätten</b><span>Jedes Objekt mit seinen Feuerstätten, Kehrfristen und Ansprechpersonen.</span><a class="link-arrow" href="price.html" data-ev="feature_objekte">Das brauche ich<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M1 6h8M4.5 2.5 8 6l-3.5 3.5"/></svg></a></li>
-          <li class="feat__item"><b>Kehrtermine</b><span>Termine je Tour aus den Fristen geplant, Kundschaft vorab verständigt.</span><a class="link-arrow" href="price.html" data-ev="feature_termine">Das brauche ich<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M1 6h8M4.5 2.5 8 6l-3.5 3.5"/></svg></a></li>
-          <li class="feat__item"><b>Protokolle vor Ort</b><span>Befund, Mängel und Fotos auf dem Handy, unterschrieben vor Ort.</span><a class="link-arrow" href="price.html" data-ev="feature_protokoll">Das brauche ich<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M1 6h8M4.5 2.5 8 6l-3.5 3.5"/></svg></a></li>
-          <li class="feat__item"><b>Digitales Kehrbuch</b><span>Alle Kehrungen und Überprüfungen je Objekt, jederzeit abrufbar.</span><a class="link-arrow" href="price.html" data-ev="feature_kehrbuch">Das brauche ich<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M1 6h8M4.5 2.5 8 6l-3.5 3.5"/></svg></a></li>
+      <div class="grid grid--top">
+        <ul class="rows span-5">
+          <li><span class="rows__name">Objekte und Feuerstätten</span><p>Jedes Objekt mit seinen Feuerstätten, Kehrfristen und Ansprechpersonen.</p><a class="link rows__value" href="price.html" data-ev="feature_objekte">Das brauche ich</a></li>
+          <li><span class="rows__name">Kehrtermine</span><p>Termine je Tour aus den Fristen geplant, Kundschaft vorab verständigt.</p><a class="link rows__value" href="price.html" data-ev="feature_termine">Das brauche ich</a></li>
+          <li><span class="rows__name">Protokolle vor Ort</span><p>Befund, Mängel und Fotos auf dem Handy, unterschrieben vor Ort.</p><a class="link rows__value" href="price.html" data-ev="feature_protokoll">Das brauche ich</a></li>
+          <li><span class="rows__name">Digitales Kehrbuch</span><p>Alle Kehrungen und Überprüfungen je Objekt, jederzeit abrufbar.</p><a class="link rows__value" href="price.html" data-ev="feature_kehrbuch">Das brauche ich</a></li>
         </ul>
-
-        <div class="app-frame" role="img" aria-label="Ansicht der Software: eine Tour mit fälligen Kehrungen je Objekt und dem Stand der Verständigung">
-          <div class="app-frame__bar" aria-hidden="true"><i></i><i></i><i></i><span>Kehrbuch Digital · Touren</span></div>
-          <div class="app" aria-hidden="true">
-            <div class="app__side">
-              <span>Objekte</span><span class="is-on">Touren</span><span>Protokolle</span><span>Mängel</span><span>Kehrbuch</span>
+        <div class="span-6 start-7" role="img" aria-label="Ansicht der Software: eine Tour mit fälligen Kehrungen je Objekt und ihrem Stand">
+          <div class="ui ui-panel ui-win" data-ui="window" aria-hidden="true">
+            <div class="ui-win__bar">
+              <span class="ui-dots"><i></i><i></i><i></i></span>
+              <span class="ui-win__crumb">Touren <i>/</i> <b>Tour Nord, Mittwoch</b></span>
+              <span class="ui-spacer"></span>
+              <span class="ui-win__search"><svg class="ui-icon" viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 3 3"/></svg><span class="ui-win__ph">Objekt suchen</span></span>
             </div>
-            <div class="app__main">
-              <div class="app__head"><strong>Tour Nord · Mittwoch</strong><em class="chip chip--ok">Kundschaft verständigt</em></div>
-              <div class="app__row app__row--h"><span>Objekt</span><span>Feuerstätten</span><span>Status</span></div>
-              <div class="app__row"><span>Mehrparteienhaus</span><span>Gastherme, Kaminofen</span><em class="chip chip--ok">Erledigt</em></div>
-              <div class="app__row"><span>Einfamilienhaus</span><span>Pelletkessel</span><em class="chip chip--ok">Erledigt</em></div>
-              <div class="app__row"><span>Gasthaus</span><span>Holzherd, Ölkessel</span><em class="chip chip--due">Unterwegs</em></div>
-              <div class="app__row"><span>Bauernhof</span><span>Kachelofen</span><em class="chip">Fällig</em></div>
-              <div class="app__row"><span>Volksschule</span><span>Gaskessel</span><em class="chip">Fällig</em></div>
-              <div class="app__row app__row--warn"><span>Werkstatt</span><span>Ölkessel</span><em class="chip chip--warn">Termin verschoben</em></div>
+            <div class="ui-win__body">
+              <nav class="ui-win__side">
+                <span class="ui-win__nav">Objekte</span>
+                <span class="ui-win__nav is-on">Touren</span>
+                <span class="ui-win__nav">Protokolle</span>
+                <span class="ui-win__nav">Mängel</span>
+                <span class="ui-win__nav">Kehrbuch</span>
+              </nav>
+              <div class="ui-win__main">
+                <div class="ui-win__cols"><span>Objekt</span><span>Feuerstätten</span><span>Status</span></div>
+                <ul class="ui-win__rows">
+                  <li class="ui-win__row"><span class="ui-avatar" data-tone="1">MH</span><span class="ui-win__who">Mehrparteienhaus</span><span class="ui-win__sub">Gastherme, Kaminofen</span><span class="ui-win__st is-done">Erledigt</span></li>
+                  <li class="ui-win__row"><span class="ui-avatar" data-tone="3">EH</span><span class="ui-win__who">Einfamilienhaus</span><span class="ui-win__sub">Pelletkessel</span><span class="ui-win__st is-done">Erledigt</span></li>
+                  <li class="ui-win__row is-sel"><span class="ui-avatar" data-tone="4">GH</span><span class="ui-win__who">Gasthaus</span><span class="ui-win__sub">Holzherd, Ölkessel</span><span class="ui-win__st is-work">Unterwegs</span></li>
+                  <li class="ui-win__row"><span class="ui-avatar" data-tone="2">BH</span><span class="ui-win__who">Bauernhof</span><span class="ui-win__sub">Kachelofen</span><span class="ui-win__st">Fällig</span></li>
+                  <li class="ui-win__row"><span class="ui-avatar" data-tone="5">VS</span><span class="ui-win__who">Volksschule</span><span class="ui-win__sub">Gaskessel</span><span class="ui-win__st">Fällig</span></li>
+                  <li class="ui-win__row"><span class="ui-avatar" data-tone="3">WS</span><span class="ui-win__who">Werkstatt</span><span class="ui-win__sub">Ölkessel</span><span class="ui-win__st is-you">Verschoben</span></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -138,90 +162,103 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <section class="section" id="beispiel" data-view="example_view" aria-labelledby="bsp-h">
-    <div class="wrap bsp">
-      <div class="bsp__text">
-        <div class="section-head"><h2 id="bsp-h">Beispiel (fiktive Daten)</h2></div>
-        <p class="fine">Rauchfangkehrerbetrieb mit zwei Gesellen und 1.800 Objekten im Kehrgebiet. Für die nächste Woche plant die Software 140 Kehrungen in vier Touren; die Kundschaft bekommt eine Verständigung. Vor Ort erfasst der Geselle den Befund, notiert einen Mangel am Verbindungsstück mit Foto, und das Protokoll liegt sofort im Kehrbuch.</p>
-        <a class="btn btn--primary" href="price.html" data-ev="click_cta_after_example">Paket wählen</a>
-      </div>
-      <div class="phone-stage" role="img" aria-label="Ein Handy mit dem Protokoll vor Ort: Befund, Mangel am Verbindungsstück mit Foto und Unterschrift der Kundschaft">
-        <div class="phone" aria-hidden="true">
-          <div class="phone__notch"></div>
-          <div class="phone__screen">
-            <div class="p-head"><small>Protokoll</small><strong>Einfamilienhaus · Pelletkessel</strong></div>
-            <div class="p-line p-line--ok"><span class="tick"></span>Kehrung durchgeführt</div>
-            <div class="p-line p-line--ok"><span class="tick"></span>Abgasweg überprüft</div>
-            <div class="p-line p-line--warn"><span class="tick tick--warn"></span>Mangel: Verbindungsstück</div>
-            <div class="p-photo">
-              <svg viewBox="0 0 200 92" preserveAspectRatio="xMidYMid slice"><rect width="200" height="92" fill="#2a2e33"/><rect x="0" y="62" width="200" height="30" fill="#33383e"/><rect x="28" y="10" width="34" height="82" fill="#5b6168"/><rect x="62" y="38" width="96" height="20" fill="#7a8088"/><rect x="152" y="30" width="18" height="36" rx="3" fill="#8d939b"/><circle cx="104" cy="48" r="14" fill="none" stroke="#f08a4b" stroke-width="3"/></svg>
+  <section class="section ground-inverse" id="beispiel" data-view="example_view" aria-labelledby="bsp-h">
+    <div class="wrap">
+      <div class="grid grid--top">
+        <div class="section-head span-5">
+          <h2 id="bsp-h">Beispiel (fiktive Daten)</h2>
+          <p>Rauchfangkehrerbetrieb mit zwei Gesellen und 1.800 Objekten im Kehrgebiet. Für die nächste Woche plant die Software 140 Kehrungen in vier Touren; die Kundschaft bekommt eine Verständigung. Vor Ort erfasst der Geselle den Befund, notiert einen Mangel am Verbindungsstück mit Foto, und das Protokoll liegt sofort im Kehrbuch.</p>
+          <div class="btn-row"><a class="btn btn--primary" href="price.html" data-ev="click_cta_after_example">Paket wählen</a></div>
+        </div>
+        <div class="span-6 start-7" role="img" aria-label="Das Protokoll vor Ort am Handy: Kehrung, Abgasweg, Mangel am Verbindungsstück mit Foto, Unterschrift der Kundschaft">
+          <div class="ui ui-panel ui-checks" data-ui="checklist" aria-hidden="true">
+            <div class="ui-checks__head">
+              <div class="ui-title">Protokoll · Einfamilienhaus, Pelletkessel</div>
+              <span class="ui-spacer"></span>
+              <div class="ui-meta">3 von 5</div>
             </div>
-            <div class="p-sign">
-              <small>Unterschrift Kundschaft</small>
-              <svg viewBox="0 0 220 56"><path class="sig" d="M8 40c14-22 24-30 30-22s-10 26-2 24 18-30 26-28-6 26 2 26 14-18 22-18 4 16 12 14 16-20 26-20 2 18 12 16 30-8 44-10"/></svg>
-            </div>
-            <div class="p-send">Protokoll per E-Mail senden</div>
+            <div class="ui-checks__bar"><i style="--k:0.6"></i></div>
+            <ul class="ui-checks__list">
+              <li class="ui-check is-done"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Kehrung durchgeführt</span></li>
+              <li class="ui-check is-done"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Abgasweg überprüft</span></li>
+              <li class="ui-check is-done"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Mangel: Verbindungsstück, mit Foto</span></li>
+              <li class="ui-check"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Unterschrift der Kundschaft</span></li>
+              <li class="ui-check"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Protokoll per E-Mail senden</span></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis" class="section section--light" aria-labelledby="opis-h">
+  <section id="opis" class="section" style="--h: 2" aria-labelledby="opis-h">
     <div class="wrap">
       <div class="section-head"><h2 id="opis-h">So funktioniert es</h2></div>
-      <div class="prose">
+      <div class="grid grid--top">
+        <div class="span-6 stack-4">
     <p>Ein Rauchfangkehrerbetrieb betreut in seinem Kehrgebiet hunderte bis tausende Objekte, jedes mit eigenen Feuerstätten und Kehrfristen. Die Termine müssen geplant, die Kundschaft verständigt, die Kehrungen und Überprüfungen dokumentiert und die Protokolle aufbewahrt werden — und das alles neben der Arbeit auf den Dächern.</p>
     <p>In vielen Betrieben läuft das noch über Karteikarten, Tabellen und Papierprotokolle, die abends ins Büro getragen werden. Fristen werden von Hand nachgeschaut, Verständigungen einzeln geschrieben, und wenn eine Kundin nach dem letzten Befund fragt, beginnt die Suche im Ordner.</p>
     <p>Die Software beginnt beim Objekt. Jedes Objekt wird mit Adresse, Eigentümer oder Hausverwaltung, Feuerstätten, Brennstoff und den geltenden Kehrfristen angelegt. Daraus ergibt sich, welche Kehrungen und Überprüfungen wann fällig sind.</p>
     <p>Aus den Fristen plant die Software die Termine je Tour, sortiert nach Straßen und Gebieten. Die Kundschaft bekommt vorab eine Verständigung mit dem Termin, auf Wunsch per E-Mail oder SMS, und kann einen anderen Termin vorschlagen. Verschobene Termine landen automatisch in der nächsten passenden Tour.</p>
     <p>Vor Ort erfasst der Geselle auf dem Handy, was gekehrt und überprüft wurde, den Befund und etwaige Mängel, mit Foto, wenn nötig. Die Kundschaft unterschreibt am Bildschirm, und das Protokoll geht per E-Mail hinaus. Papier muss nicht mehr ins Büro zurückgetragen werden.</p>
     <p>Alle Kehrungen und Überprüfungen eines Objekts bilden das digitale Kehrbuch. Bei einer Frage der Kundschaft, der Hausverwaltung oder der Behörde ist der Verlauf mit allen Befunden und Mängeln sofort abrufbar.</p>
+        </div>
+        <div class="span-6 stack-4">
     <p>Mängel, die behoben werden müssen, erscheinen in einer eigenen Liste mit Frist. Der Betrieb sieht, welche Mängel offen sind, und kann bei der nächsten Kehrung prüfen, ob sie behoben wurden.</p>
     <p>Im Büro sieht der Meister jeden Morgen, welche Touren heute gefahren werden, welcher Geselle wo unterwegs ist und welche Kehrungen erledigt sind. Fällt ein Geselle aus, werden seine Termine mit wenigen Klicks auf andere Touren verteilt, und die betroffene Kundschaft bekommt automatisch eine neue Verständigung, ohne dass jemand telefonieren muss.</p>
     <p>Wechselt ein Objekt den Eigentümer oder die Hausverwaltung, wird nur die Ansprechperson geändert; Feuerstätten, Fristen und der gesamte Verlauf bleiben am Objekt. Neue Feuerstätten, etwa nach dem Tausch eines Heizkessels, werden mit dem Datum ihrer Inbetriebnahme ergänzt, und die Fristen passen sich daran an.</p>
     <p>Aus den erledigten Kehrungen entstehen die Rechnungen nach den Tarifen des Betriebs, ohne dass Leistungen nochmals abgetippt werden. Offene Rechnungen sind in einer Liste sichtbar.</p>
     <p>Der Umstieg geht schrittweise: Objekte aus einer Tabelle übernehmen, Fristen prüfen, und die erste Tour der nächsten Woche wird bereits mit der Software geplant. Die Software läuft im Browser und auf dem Handy, ohne Installation.</p>
     <p>Die Software ist für kleinere Rauchfangkehrerbetriebe in Österreich gedacht. Sie ist in Vorbereitung: Wir prüfen zuerst, ob Betriebe sie brauchen, und bauen sie erst danach. Für Kehrungen, Befunde und die Einhaltung der Vorschriften bleibt der Betrieb verantwortlich.</p>
+        </div>
       </div>
     </div>
   </section>
   <section id="faq" class="section" aria-labelledby="faq-h">
     <div class="wrap">
       <div class="section-head"><h2 id="faq-h">Häufige Fragen</h2></div>
-      <div class="faq">
-        <div class="faq__item"><h3>Für wen ist die Software?</h3>
-        <p>Für Rauchfangkehrerbetriebe in Österreich mit einem bis wenigen Gesellen.</p></div>
-        <div class="faq__item"><h3>Werden Kehrtermine automatisch geplant?</h3>
-        <p>Ja, aus den Kehrfristen je Objekt, sortiert nach Touren; die Kundschaft wird vorab verständigt.</p></div>
-        <div class="faq__item"><h3>Kann das Protokoll vor Ort unterschrieben werden?</h3>
-        <p>Ja, am Handy des Gesellen; das Protokoll geht danach per E-Mail an die Kundschaft.</p></div>
-        <div class="faq__item"><h3>Muss ich etwas installieren?</h3>
-        <p>Nein, die Software läuft im Browser und auf dem Handy.</p></div>
-        <div class="faq__item"><h3>Kann ich sie schon nutzen?</h3>
-        <p>Noch nicht. Die Software ist in Vorbereitung, und wir prüfen, ob Betriebe sie brauchen.</p></div>
+      <div class="grid grid--top">
+        <div class="faq span-6">
+          <div class="faq__item"><h3>Für wen ist die Software?</h3>
+          <p>Für Rauchfangkehrerbetriebe in Österreich mit einem bis wenigen Gesellen.</p></div>
+          <div class="faq__item"><h3>Werden Kehrtermine automatisch geplant?</h3>
+          <p>Ja, aus den Kehrfristen je Objekt, sortiert nach Touren; die Kundschaft wird vorab verständigt.</p></div>
+          <div class="faq__item"><h3>Kann das Protokoll vor Ort unterschrieben werden?</h3>
+          <p>Ja, am Handy des Gesellen; das Protokoll geht danach per E-Mail an die Kundschaft.</p></div>
+        </div>
+        <div class="faq span-6">
+          <div class="faq__item"><h3>Muss ich etwas installieren?</h3>
+          <p>Nein, die Software läuft im Browser und auf dem Handy.</p></div>
+          <div class="faq__item"><h3>Kann ich sie schon nutzen?</h3>
+          <p>Noch nicht. Die Software ist in Vorbereitung, und wir prüfen, ob Betriebe sie brauchen.</p></div>
+        </div>
       </div>
     </div>
   </section>
 <!-- seo-tekst:end -->
 </main>
 
-<footer class="footer closing">
+<footer class="footer closing footer--statement">
   <div class="wrap">
-    <section id="start" class="closing__cta" data-view="start_view" aria-labelledby="start-h">
-      <div class="section-head"><h2 id="start-h">Legen Sie Ihren Betrieb an</h2></div>
-      <div class="start-form">
-        <label class="field">Objekte im Kehrgebiet
-          <select data-ev-focus="form_start"><option value="">— bitte wählen —</option><option>Bis 500</option><option>500–1.500</option><option>1.500–4.000</option><option>Mehr als 4.000</option></select>
-        </label>
-        <a class="btn btn--primary btn--xl" href="price.html" data-ev="form_submit_click">Starten<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M1 6h8M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+    <section id="start" class="closing__cta close--type" data-view="start_view" aria-labelledby="start-h">
+      <div class="section-head">
+        <h2 id="start-h">Legen Sie Ihren Betrieb an</h2>
+        <p>Dienst in Vorbereitung · Auf dieser Seite wird keine Zahlung angenommen</p>
       </div>
-      <p class="cta-note">Dienst in Vorbereitung · Auf dieser Seite wird keine Zahlung angenommen</p>
+      <div class="form">
+        <div class="field">
+          <label for="objekte">Objekte im Kehrgebiet</label>
+          <select id="objekte" data-ev-focus="form_start"><option value="">— bitte wählen —</option><option>Bis 500</option><option>500–1.500</option><option>1.500–4.000</option><option>Mehr als 4.000</option></select>
+        </div>
+      </div>
+      <a class="btn btn--primary btn--xl btn--wide" href="price.html" data-ev="form_submit_click">Starten<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
     </section>
     <div class="closing__links">
-      <p class="footer__brand">Kehrbuch Digital</p>
-      <p class="muted">Planung und Dokumentation für Ihren Betrieb. Für Kehrungen, Befunde und die Einhaltung der Vorschriften bleibt der Betrieb verantwortlich.</p>
-      <p class="footer__legal"><a href="privacy.html" data-ev="click_legal_privacy">Datenschutz</a></p>
+      <div class="grid">
+        <p class="footer__lede span-6">Planung und Dokumentation für Ihren Betrieb.</p>
+        <p class="span-6 start-7 muted">Für Kehrungen, Befunde und die Einhaltung der Vorschriften bleibt der Betrieb verantwortlich.</p>
+      </div>
+      <div class="footer__legal"><span>Kehrbuch Digital</span><a href="privacy.html" data-ev="click_legal_privacy">Datenschutz</a></div>
     </div>
   </div>
 </footer>
